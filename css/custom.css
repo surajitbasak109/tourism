@@ -1,0 +1,523 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hotel_container .tourday {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: .8em;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 3px 5px;
+  z-index: 99999;
+}
+
+.hotel_container .tourday.hot {
+  background: #000;
+  background: red;
+  background: -webkit-linear-gradient(0deg, red, orange);
+  background: linear-gradient(90deg, red, orange);
+  background-size: 200% 200%;
+  -webkit-animation: hot 10s ease infinite;
+  -moz-animation: hot 10s ease infinite;
+  -o-animation: hot 10s ease infinite;
+  animation: hot 10s ease infinite;
+}
+
+.hotel_container .img_container a .info {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 1em;
+  display: none;
+}
+
+.hotel_container .img_container a:hover>.info {
+  display: block;
+}
+
+.itinerary ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.itinerary ul li {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 1.4em;
+  padding: 4px 5px;
+  color: #0586b1;
+}
+
+.itinerary {
+  width: 70%;
+}
+
+.pack_code {
+  height: 26px;
+  line-height: 26px;
+  width: 30%;
+  background: #910311;
+  text-align: center;
+  color: #fff;
+}
+
+.qury-pnl-form label {
+  font-size: 13px;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: left !important
+}
+
+.qury-pnl-form input {
+  font-size: 14px;
+  height: 40px;
+  color: #000;
+  padding: 10px 10px 10px 30px;
+  background: #fff;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #b3b1b1
+}
+
+.qury-pnl-form textarea {
+  font-size: 14px;
+  height: 55px;
+  color: #000;
+  padding: 10px 10px 10px 30px;
+  background: #fff;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #b3b1b1
+}
+
+.qury-pnl-form select {
+  font-size: 14px;
+  height: 40px;
+  border-radius: 3px;
+  color: #666;
+  padding: 10px 10px 10px 25px;
+  background: #fff;
+  width: 100%;
+  border: 1px solid #b3b1b1
+}
+
+.qury-pnl-form input:focus,
+.qury-pnl-form select:focus,
+.qury-pnl-form textarea:focus {
+  border: 1px solid #b3b1b1 !important
+}
+
+.input-group-btn:first-child .btn.btn-pm {
+  margin-right: -2px;
+  color: #666;
+  border: 1px solid #b3b1b1;
+  background: #f5f5f5;
+  height: 40px;
+  cursor: pointer
+}
+
+.input-group-btn:last-child .btn.btn-pm {
+  margin-left: -2px;
+  color: #666;
+  border: 1px solid #b3b1b1;
+  background: #f5f5f5;
+  height: 40px;
+  cursor: pointer
+}
+
+.number-spinner input {
+  font-size: 16px !important;
+  text-align: center;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  height: 40px
+}
+
+.btn {
+  border-radius: 2px
+}
+
+.qury-pnl-form-btn {
+  text-align: center
+}
+
+.qury-pnl-form-btn a {
+  border: medium;
+  cursor: pointer;
+  background: #cb257a;
+  color: #fff;
+  float: left;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  outline: 0;
+  padding: 12px 10px;
+  font-style: normal;
+  width: 100%;
+  top: 0;
+  position: relative
+}
+
+.qury-pnl-form-btn a:hover {
+  border: medium;
+  transition: all .5s ease 0s;
+  background: #ec247c;
+  border: none
+}
+
+.qury-pnl-form-btn a:active {
+  border: medium;
+  background: #666;
+  border: 1px solid #666
+}
+
+input.invalid {
+  background-color: #fed5e7
+}
+
+.tab {
+  display: none
+}
+
+.qury-pnl-form-btn button {
+  height: 40px;
+  cursor: pointer;
+  background: #a22478;
+  color: #fff;
+  margin-top: 10px;
+  float: none;
+  text-align: center;
+  border-radius: 25px;
+  border: none;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  outline: 0;
+  padding: 0 10px;
+  font-style: normal;
+  width: 46%;
+  top: 0;
+  position: relative
+}
+
+.qury-pnl-form-btn button:hover {
+  opacity: .8;
+  border: medium;
+  transition: all .5s ease 0s;
+  background: #ec247c;
+  border: none
+}
+
+#prevBtn {
+  background-color: #bbb
+}
+
+.step {
+  display: none;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border: none;
+  border-radius: 50%;
+  opacity: .5
+}
+
+.step.active {
+  opacity: 1
+}
+
+.step.finish {
+  background-color: #4caf50
+}
+
+.pkgs-cnt {
+  padding: 30px 0;
+  margin: 0;
+  background: #f3f6f8
+}
+
+.pkgs-cnt2 {
+  padding: 30px 0;
+  margin: 0;
+  background: url(../imgs/bg-footer.jpg) no-repeat center bottom #f3f6f8
+}
+
+.pg-cnt {
+  padding: 30px 0;
+  margin: 0
+}
+
+.abut {
+  background: #fff
+}
+
+.review {
+  background: url(../imgs/testimonial_bg.png) no-repeat center bottom #f3f6f8
+}
+
+.titl {
+  margin-bottom: 30px
+}
+
+.titl h2 {
+  font-family: old standard tt, serif;
+  font-size: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: #000
+}
+
+.titl p {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0
+}
+
+.titl p strong {
+  color: #000;
+  font-weight: 500
+}
+
+.titl a {
+  color: #ec247c
+}
+
+.titlebox {
+  display: table;
+  width: 50%;
+  margin: 0 auto
+}
+
+.titlebox h2 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+  color: #4a013a;
+  font-weight: 400;
+  font-family: old standard tt, serif;
+  white-space: nowrap;
+  padding: .125em .375em
+}
+
+.titlebox::before,
+.titlebox::after {
+  content: "";
+  display: table-cell;
+  width: 50%;
+  top: -20px;
+  position: relative;
+  border-bottom: 1px solid #daa3d4;
+  vertical-align: middle
+}
+
+.header-info {
+  background: rgba(255, 255, 255, .8);
+  padding: 8px 0
+}
+
+.top-header-lft {
+  float: left;
+  width: 50%
+}
+
+.top-header-rgt {
+  float: left;
+  width: 50%
+}
+
+.header-logo {
+  text-align: left
+}
+
+.header-logo img {
+  width: auto;
+  height: 50px
+}
+
+.suprt {
+  padding-top: 10px
+}
+
+.soclmdia-hdr {
+  float: right;
+  padding-left: 10px
+}
+
+.suprt p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: right
+}
+
+.suprt p a {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #050505;
+  width: 100%
+}
+
+.suprt b {
+  font-weight: 500
+}
+
+.suprt p span a {
+  border: 1px dashed red
+}
+
+.suprt p span img {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  margin-right: 5px;
+  position: relative;
+  top: -1px
+}
+
+.qury-pnl {
+  padding: 30px 0;
+  margin: 0
+}
+
+.qury-pnl h1 {
+  font-size: 28px;
+  text-align: center;
+  padding: 0 0 15px;
+  font-family: old standard tt, serif;
+  margin: 0;
+  font-weight: 400;
+  color: #fff
+}
+
+.qury-pnl h1 span {
+  font-size: 34px;
+  font-weight: 600;
+  text-transform: uppercase
+}
+
+.form-frnt {
+  width: 37%;
+  border-radius: 3px;
+  padding: 25px;
+  background: rgba(255, 255, 255, .9)
+}
+
+.cnfrm-data {
+  width: 50%;
+  border-radius: 3px;
+  margin: 0 auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, .9)
+}
+
+.qury-pnl-form h2 {
+  font-size: 19px;
+  text-align: center;
+  width: 100%;
+  color: #000;
+  padding: 0 0 10px;
+  margin: 0 0 10px;
+  font-weight: 500;
+  border-bottom: 1px solid #d4d4d4
+}
+
+.form-checkbox p {
+  font-size: 13px;
+  text-align: left;
+  float: left !important;
+  padding: 0 10px 0 20px;
+  line-height: 16px;
+  margin: 0;
+  font-weight: 500;
+  color: #333
+}
+
+.form-checkbox a {
+  background: 0 0
+}
+
+.form-checkbox input {
+  height: 16px !important;
+  width: 16px !important;
+  margin-left: 0;
+  background: #fff !important;
+  float: left;
+  margin-top: 1px;
+  border: 1px dashed red
+}
+
+.tkt-info {
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 10px 0
+}
+
+.tkt-info b {
+  border: 1px dashed red
+}
+
+.tkt-info p {
+  font-size: 13px;
+  text-align: left;
+  padding: 0;
+  line-height: 16px;
+  margin: 0;
+  font-weight: 500;
+  color: #333
+}
+
+.tkt-info span {
+  float: right !important;
+  padding-right: 15px
+}
+
+.tkt-info input {
+  height: 16px !important;
+  width: 16px !important;
+  margin-left: 0;
+  background: #fff !important;
+  float: left;
+  margin-top: 1px
+}
+
+.tvlr-info select {
+  font-size: 14px;
+  height: 40px;
+  border-radius: 3px;
+  color: #666;
+  padding: 10px !important;
+  background: #fff;
+  width: 100%;
+  border: 1px solid #b3b1b1
+}
+
+.qury-pnl-form i {
+  position: absolute;
+  top: 20px;
+  top: 39px;
+  left: 25px;
+}
+
+.qury-pnl-form i img {
+  width: 16px;
+  height: 16px;
+  opacity: .7
+}
