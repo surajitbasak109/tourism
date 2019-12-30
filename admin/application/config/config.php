@@ -29,7 +29,7 @@ $config['site_title'] = "Travel Anthem";
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://travel.test/admin/';
+$config['base_url'] = 'https://tripanthem.herokuapp.com/admin/';
 
 /*
 |--------------------------------------------------------------------------

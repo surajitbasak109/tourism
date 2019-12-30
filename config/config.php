@@ -3,7 +3,7 @@
 
 function base_url($uri = "")
 {
-  $base_url = "https://travel.test/";
+  $base_url = "https://tripanthem.herokuapp.com/";
   return !empty($uri) ? $base_url . $uri : $base_url;
 }
 
